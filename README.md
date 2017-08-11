@@ -1,6 +1,11 @@
 # traffic_light_simulator
 
-To install the required npm packages (additional packages are used only
+Clone the repo:
+```
+git clone git@github.com:wizardone/traffic_light_simulator.git
+```
+
+Go to the folder and install the required npm packages (additional packages are used only
 for testing):
 ```
 npm install
