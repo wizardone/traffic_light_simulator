@@ -1,0 +1,22 @@
+{
+  "name": "traffic",
+  "version": "1.0.0",
+  "description": "traffic light simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "traffic",
+    "light"
+  ],
+  "author": "Stefan Slaveykov",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.0",
+    "sinon-chai": "^2.12.0"
+  }
+}
