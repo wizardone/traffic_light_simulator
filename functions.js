@@ -10,11 +10,11 @@ let getNextDirection = (currentDirection) => {
 }
 
 let yellowLight = (nextDirection, nextLight) => {
-  console.log('yellow light running...')
+  console.log(`Yellow light running. Next direction: ${nextDirection}`)
 
   setTimeout(() => {
     const nextAction = nextLight || greenLight
-    nextLight(nextDirection)
+    nextAction(nextDirection)
   }, 30 * 1000)
 }
 

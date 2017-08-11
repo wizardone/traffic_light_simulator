@@ -1,4 +1,5 @@
 let trafficLight = require('./functions.js')
 
 console.log('Starting sequence...')
-trafficLight.greenLight(trafficLight.directions.shift())
+let currentDirection = trafficLight.directions.shift()
+trafficLight.greenLight(currentDirection)
