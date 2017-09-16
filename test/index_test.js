@@ -27,7 +27,7 @@ describe('#yellowLight', () => {
     const greenLightSpy = sinon.spy(trafficLight.greenLight)
 
     trafficLight.yellowLight(nextDirection, greenLightSpy)
-    clock.tick(30 * 1000)
+    clock.tick(trafficLight.periods.yellow)
 
     expect(greenLightSpy).to.have.been.calledWith(nextDirection)
     clock.restore()
@@ -42,7 +42,7 @@ describe('#greenLight', () => {
     const yellowLightSpy = sinon.spy(trafficLight.yellowLight)
 
     trafficLight.greenLight(currentDirection, yellowLightSpy)
-    clock.tick(5 * 60 * 1000)
+    clock.tick(trafficLight.periods.green)
 
     expect(yellowLightSpy).to.have.been.calledWith(nextDirection)
     clock.restore()
